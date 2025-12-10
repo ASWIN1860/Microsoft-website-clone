@@ -6,19 +6,19 @@
   /* 1. Fix container height so slide change timeil jump varilla */
   #carouselExampleControls,
   #carouselExampleControls .carousel-inner {
-    height: 25vh !important;
+    height: 20vh !important;
     overflow: hidden;
   }
 
   /* 2. All slides same height compulsory */
   .carousel-item {
-    height: 25vh !important;
+    height: 20vh !important;
     overflow: hidden;
   }
 
   /* 3. Active slide height consistency */
   .carousel-item.active {
-    height: 25vh !important;
+    height: 20vh !important;
   }
 
   /* 4. Image always fits inside the box */
