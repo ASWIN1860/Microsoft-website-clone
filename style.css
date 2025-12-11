@@ -9,46 +9,38 @@ html, body {
 
 @media (max-width: 576px) {
   
-  /* 1. Fix container height so slide change timeil jump varilla */
   #carouselExampleControls,
   #carouselExampleControls .carousel-inner {
     height: 20vh !important;
     overflow: hidden;
   }
-
-  /* 2. All slides same height compulsory */
   .carousel-item {
     height: 20vh !important;
     overflow: hidden;
   }
-
-  /* 3. Active slide height consistency */
   .carousel-item.active {
     height: 20vh !important;
   }
-
-  /* 4. Image always fits inside the box */
   .carousel-item img,
   .carousel-item.active img {
     height: 100% !important;
     width: 100% !important;
-    display: block; /* prevent white gaps */
+    display: block;
   }
 }
 .footer-grid {
     display: grid;
-    gap: 1.75rem; /* grid gap between columns */
-    grid-template-columns: 1fr; /* mobile default: 1 column */
+    gap: 1.75rem;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: 576px) {
-    .footer-grid { grid-template-columns: repeat(2,1fr); } /* sm */
+    .footer-grid { grid-template-columns: repeat(2,1fr); }
   }
   @media (min-width: 768px) {
-    .footer-grid { grid-template-columns: repeat(4,1fr); } /* md */
+    .footer-grid { grid-template-columns: repeat(4,1fr); }
   }
   @media (min-width: 992px) {
-    /* large: 7 equal columns like screenshot */
     .footer-grid { grid-template-columns: repeat(7, 1fr); }
   }
 
@@ -56,6 +48,6 @@ html, body {
   .footer-col a { text-decoration: none; }
   .footer-col a:hover { text-decoration: underline; }
   footer ul.small li a { color: #6b6b6b; }
-  footer .bg-light { background-color: #f5f6f7 !important; } /* subtle bg */
+  footer .bg-light { background-color: #f5f6f7 !important; }
 
 
