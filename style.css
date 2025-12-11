@@ -35,5 +35,27 @@ html, body {
     display: block; /* prevent white gaps */
   }
 }
+.footer-grid {
+    display: grid;
+    gap: 1.75rem; /* grid gap between columns */
+    grid-template-columns: 1fr; /* mobile default: 1 column */
+  }
+
+  @media (min-width: 576px) {
+    .footer-grid { grid-template-columns: repeat(2,1fr); } /* sm */
+  }
+  @media (min-width: 768px) {
+    .footer-grid { grid-template-columns: repeat(4,1fr); } /* md */
+  }
+  @media (min-width: 992px) {
+    /* large: 7 equal columns like screenshot */
+    .footer-grid { grid-template-columns: repeat(7, 1fr); }
+  }
+
+  .footer-col h6 { color: #444; font-size: .95rem; }
+  .footer-col a { text-decoration: none; }
+  .footer-col a:hover { text-decoration: underline; }
+  footer ul.small li a { color: #6b6b6b; }
+  footer .bg-light { background-color: #f5f6f7 !important; } /* subtle bg */
 
 
