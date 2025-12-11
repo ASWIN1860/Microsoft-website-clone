@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body { 
+    overflow-x: hidden; 
+}
+
 @media (max-width: 576px) {
   
   /* 1. Fix container height so slide change timeil jump varilla */
@@ -31,7 +35,5 @@
     display: block; /* prevent white gaps */
   }
 }
-.container{
-    height: 600px;
-}
+
 
